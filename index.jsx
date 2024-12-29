@@ -2,25 +2,11 @@
 
 var boards = [
   [
-    [1,0,0,0,1],
-    [0,1,0,1,0],
-    [0,0,1,0,0],
-    [0,1,0,1,0],
-    [1,0,0,0,1]
-  ],
-  [
-    [0,0,0,0,0],
-    [0,1,1,1,0],
-    [0,1,0,1,0],
-    [0,1,1,1,0],
-    [0,0,0,0,0]
-  ],
-  [
-    [0,0,1,0,0],
-    [0,1,0,1,0],
-    [1,0,1,0,1],
-    [0,1,0,1,0],
-    [0,0,1,0,0]
+    [1,0,0,1,0],
+    [0,1,1,0,0],
+    [1,0,0,0,0],
+    [1,1,0,1,0],
+    [1,1,1,1,1]
   ]
 ];
 
@@ -99,14 +85,6 @@ var LightsOut = React.createClass({
   render: function() {
     return (
       <div>
-        <a
-          href="http://en.wikipedia.org/wiki/Lights_Out_(game)#Light_chasing"
-          target="_blank"
-          id="hidden-cheat"
-        >
-          Turn on every switch.
-        </a>
-        <button onClick={this.handleReset}>Shuffle</button>
         {
           this.state.board.map(function(row, i) {
             return (
