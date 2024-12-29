@@ -3,6 +3,10 @@
   color: black;
 }
 
+#game{
+  text-align: center;
+}
+
 .switch {
   width: 36px;
   height: 36px;
