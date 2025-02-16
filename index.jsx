@@ -98,7 +98,7 @@ var LightsOut = React.createClass({
                     // 5x5 swiches. Pass some props to each one
                     return (
                       <Switch
-                        isOn={!!cell}
+                        isOn={!cell}
                         done={this.state.done}
                         onClick={this.handleSwitchClick.bind(this, i, j)}
                       />
